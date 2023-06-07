@@ -1,22 +1,27 @@
 <template>
   <div class="portfolio">
-
     <main>
       <section class="illustrations">
         <div class="content-showcase-wrapper">
-        <div class="content-showcase">           
-        <p>Illustrations</p>
-      </div></div>
+          <div class="content-showcase">
+            <p>Illustrations</p>
+          </div>
+        </div>
         <div class="illustration-grid">
           <div v-for="(illustration, index) in illustrations" :key="index" class="illustration-card">
-            <img :src="illustration.image" alt="Illustration" />
+            <img :src="illustration.image" alt="Illustration" @click="showOverlay(index)" />
+          </div>
+        </div>
+        <div v-if="showOverlayFlag" class="overlay">
+          <div class="overlay-content">
+            <span class="close-button" @click="hideOverlay">&times;</span>
+            <img :src="illustrations[currentIndex].image" alt="Illustration" />
           </div>
         </div>
       </section>
     </main>
   </div>
 </template>
-
 <script>
 import { ref } from 'vue';
 
@@ -32,14 +37,62 @@ export default {
       // Add more illustrations as needed
     ]);
 
+    const showOverlayFlag = ref(false);
+    const currentIndex = ref(0);
+
+    const showOverlay = (index) => {
+      currentIndex.value = index;
+      showOverlayFlag.value = true;
+    };
+
+    const hideOverlay = () => {
+      showOverlayFlag.value = false;
+    };
+
     return {
       illustrations,
+      showOverlayFlag,
+      currentIndex,
+      showOverlay,
+      hideOverlay,
     };
   },
 };
 </script>
 
 <style scoped>
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.overlay-content {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  font-size:60px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.overlay-content img {
+  max-width: 45%;
+  max-height: 45%;
+}
 
 .content-showcase{
   position: relative;
