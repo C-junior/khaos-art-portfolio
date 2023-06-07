@@ -236,14 +236,14 @@ header {
   flex-direction: column;
   align-items: center;
   max-height: 84px;
-  background-color: #1f1f1f;
+  background-color: #121214;
 }
 
 .mainImg {
   width: 100vw;
   position: relative;
   top: -80px;
-  left: -500px;
+  left: -560px;
   z-index: 1;
 }
 
@@ -272,7 +272,7 @@ nav a:first-of-type {
 .conteudo {
   position: absolute;
   top: 800px;
-  background-color: #1f1f1f;
+  background-color: #121214;
   z-index: 3;
 }
 
@@ -280,7 +280,7 @@ nav a:first-of-type {
   position: absolute;
   top: 200px;
   right: 0;
-  background-color: #1f1f1f;
+  background-color: #121214;
   height: 500px;
   width: 350px;
   z-index: 12;
