@@ -2,7 +2,7 @@
 
 body{
   overflow-x: hidden;
-  background-image: url("../src/assets/bgnova.jpg") ;
+  background-image: url("https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/bgnova.jpg") ;
   background-size: cover;
   background-position: 300px -300px;
 }
