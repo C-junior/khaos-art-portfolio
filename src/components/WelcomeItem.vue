@@ -24,10 +24,10 @@ export default {
   name: 'Portfolio',
   setup() {
     const illustrations = ref([
-      { image: '../src/assets/nemesis.jpg' },
-      { image: '../src/assets/nijinrework.png' },
-      { image: '../src/assets/misty.jpeg' },
-      { image: '../src/assets/yelanrework.png' },
+      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/nemesis.jpg' },
+      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/nijinrework.png' },
+      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/misty.jpeg' },
+      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/yelanrework.png' },
     
       // Add more illustrations as needed
     ]);
