@@ -139,7 +139,7 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0 10px;
+  margin: 0 20px;
   transition: background-color 0.3s ease;
   position: relative;
 }
@@ -164,14 +164,17 @@ p {
 
 .facebook {
   background-color: #3b5998;
+  font-size: 1.3rem;
 }
 
 .twitter {
   background-color: #1da1f2;
+  font-size: 1.3rem;
 }
 
 .instagram {
   background-color: #c13584;
+  font-size: 1.3rem;
 }
 
 .social-link i {
