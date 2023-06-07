@@ -27,7 +27,7 @@
     <div class="card-content">
       <div class="profile-image">
         <div class="box"></div>
-        <img src="../src/assets/IA art perfil.jpg" />
+        <img src="../src/assets/IA-art-perfil.jpg" />
       </div>
       <p>Follow me on social media:</p>
       <div class="social-links">
