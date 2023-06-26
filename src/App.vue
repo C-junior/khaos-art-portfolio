@@ -225,13 +225,7 @@ z-index: 99;
   align-items: center;  
 }
 
-.name {
-  text-align: center;
-  font-family: 'Cinzel Decorative', cursive;
-  padding: 0 4rem;
-  color: rgb(19, 19, 19);
-  background-color: red;
-}
+
 
 header {
   display: flex;
@@ -247,13 +241,6 @@ header {
   top: -80px;
   left: -560px;
   z-index: 1;
-}
-
-.logo {
-  display: block;
-  margin: 0;
-  position: relative;
-  left: 0;
 }
 
 nav {
@@ -286,7 +273,6 @@ nav a:first-of-type {
   background-color: #121214;
   height: 500px;
   width: 350px;
-  z-index: 12;
 }
 
 .sideDiv h1 {
@@ -296,21 +282,78 @@ nav a:first-of-type {
   color: #be1515;
 }
 
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .header-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h-logo {
+    width: 220px;
+  }
+
+  .mainImg {
+    display: none;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .sideDiv {
+    top: 0;
+    right: 0;
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+  }
+  .box{
+    left: calc(50% - 65px);
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    justify-content: space-between;
+  }
+
+  /* .h-logo {
+    width: 200px;
+  } */
+
+  /* .mainImg {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  } */
+
+  .sideDiv {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    background-color: #121214;
+    height: 500px;
+    width: 350px;
+    z-index: 12;
+  }
+}
+
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: start;
+  .header-content {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  .sideDiv {
+    top: 200px;
   }
 
   nav {

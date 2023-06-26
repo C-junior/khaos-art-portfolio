@@ -12,7 +12,7 @@
             <img :src="illustration.image" alt="Illustration" @click="showOverlay(index)" />
           </div>
         </div>
-        <div v-if="showOverlayFlag" class="overlay">
+        <div v-if="showOverlayFlag" class="overlay" @click="hideOverlay">
           <div class="overlay-content">
             <span class="close-button" @click="hideOverlay">&times;</span>
             <img :src="illustrations[currentIndex].image" alt="Illustration" />
@@ -22,6 +22,8 @@
     </main>
   </div>
 </template>
+
+
 <script>
 import { ref } from 'vue';
 
@@ -42,7 +44,7 @@ export default {
 
     const showOverlay = (index) => {
       currentIndex.value = index;
-      showOverlayFlag.value = true;
+      showOverlayFlag.value = !showOverlayFlag.value; // Toggle the value of showOverlayFlag
     };
 
     const hideOverlay = () => {
@@ -59,6 +61,7 @@ export default {
   },
 };
 </script>
+
 
 <style scoped>
 
@@ -82,16 +85,16 @@ export default {
 .close-button {
   position: absolute;
   top: 40px;
-  right: 80px;
+  left: 110px;
   font-size:60px;
   color: #fff;
   cursor: pointer;
-  z-index: 999;
+  z-index: 9998;
 }
 
 .overlay-content img {
-  max-width: 45%;
-  max-height: 45%;
+  max-width: 70%;
+  max-height: 70%;
 }
 
 .content-showcase{
@@ -161,9 +164,8 @@ main {
 
 .illustration-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1080px;
-   margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
   gap: 1rem;
   z-index: 0;
 }
@@ -183,5 +185,16 @@ main {
 .illustration-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 5px 10px rgba(170, 4, 4, 0.555);
+}
+
+@media (max-width: 768px) {
+  .illustration-grid {
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+
+  .overlay-content img {
+    max-width: 90%;
+    max-height: 90%;
+  }
 }
 </style>
