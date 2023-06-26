@@ -31,17 +31,18 @@
       </div>
       <p>Follow me on social media:</p>
       <div class="social-links">
-        <a href="#" class="social-link facebook">
-          <i class="fab fa-facebook"></i> 
+        <a href="https://www.instagram.com/khaoz_art/" class="social-link instagram">
+          <i class="fab fa-instagram"> </i>
+      
         </a>
-        <a href="#" class="social-link twitter">
+        <a href="https://www.pixiv.net/en/users/68005154" class="social-link facebook">
+           <img class="pixiv" src="./assets//pixiv.svg" alt="">
+        </a>
+        <a href="https://twitter.com/Khaos_Jr" class="social-link twitter">
           <i class="fab fa-twitter"></i>
           
         </a>
-        <a href="#" class="social-link instagram">
-          <i class="fab fa-instagram"></i>
-      
-        </a>
+        
       </div>
     </div>
   </div>
@@ -163,7 +164,7 @@ p {
 }
 
 .facebook {
-  background-color: #3b5998;
+  background-color: #0096db;
   font-size: 1.3rem;
 }
 
@@ -181,9 +182,10 @@ p {
   font-size: 20px;
 }
 
-.social-link i.fa-facebook-f {
+.social-link .pixiv {
   /* Customize styles for Facebook link */
-  color: #3b5998;
+  color: #0096db;
+ width: 20px;
 }
 
 .social-link i.fa-twitter {
@@ -272,8 +274,9 @@ nav a:first-of-type {
 .conteudo {
   position: absolute;
   top: 800px;
-  background-color: #121214;
+  background: rgb(29, 29, 29);
   z-index: 3;
+  height: 100vh;
 }
 
 .sideDiv {
