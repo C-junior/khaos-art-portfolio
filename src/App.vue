@@ -291,9 +291,12 @@ nav a:first-of-type {
   }
 
   .h-logo {
-    width: 220px;
+    width: 180px;
   }
-
+  
+  .header-content a {
+    margin-top: 10px;
+  }
   .mainImg {
     display: none;
     width: 1px;

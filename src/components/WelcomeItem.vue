@@ -85,7 +85,7 @@ export default {
 .close-button {
   position: absolute;
   top: 40px;
-  left: 110px;
+  left: 40px;
   font-size:60px;
   color: #fff;
   cursor: pointer;
@@ -194,6 +194,10 @@ main {
   .overlay-content img {
     max-width: 90%;
     max-height: 90%;
+  }
+  .close-button {
+    top:-10px;
+    left:10px
   }
 }
 </style>
