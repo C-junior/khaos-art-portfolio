@@ -93,8 +93,7 @@ export default {
 }
 
 .overlay-content img {
-  max-width: 70%;
-  max-height: 70%;
+  max-height: 94vh;
 }
 
 .content-showcase{
