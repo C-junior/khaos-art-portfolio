@@ -34,7 +34,7 @@
 .content-showcase{
   position: relative;
   padding-bottom: 0;
-  top: -94px;
+  top: -54px;
   background: rgb(29, 29, 29);
   width: 20rem;
   margin: auto;
@@ -59,16 +59,18 @@
 .header h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  font-family: 'Cinzel Decorative', cursive;
 }
 .title{
-  padding-top: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: 'Cinzel Decorative', cursive;
   font-size: 2rem;
   text-align: center;
 }
 
 .header p {
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.7;
 }
 
