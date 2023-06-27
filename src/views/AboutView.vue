@@ -1,6 +1,7 @@
 <template>
   <div class="about-page">
-    <h1 style="text-align: center;">About</h1>
+    <div class="content-showcase"><p  class="title">About</p></div>
+    
     <div class="header">
       <h1>Khaos</h1>
       <p>🎨 Illustrator </p>
@@ -30,11 +31,24 @@
 </template>
 
 <style scoped>
+.content-showcase{
+  position: relative;
+  padding-bottom: 0;
+  top: -94px;
+  background: rgb(29, 29, 29);
+  width: 20rem;
+  margin: auto;
+  border-radius: 12px  12px 0 0;
+  z-index: 2;
+  border: #801010 solid 2px;
+  border-bottom: transparent solid 2px
+}
 .about-page {
-  background-color: #1f1f1f;
+  background: rgb(29, 29, 29);
+  border-top:solid #801010 2px;
   color: #fff;
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 0 20px ;
 }
 
 .header {
@@ -45,6 +59,12 @@
 .header h1 {
   font-size: 36px;
   margin-bottom: 10px;
+}
+.title{
+  padding-top: 20px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .header p {
