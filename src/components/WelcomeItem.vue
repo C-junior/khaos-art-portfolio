@@ -33,8 +33,11 @@ export default {
     const illustrations = ref([
       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/nemesis.jpg' },
       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/nijinrework.png' },
-      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/misty.jpeg' },
+      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/Mistyfullrework.png ' },
       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/yelanrework.png' },
+       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/trezemod.jpg' },
+       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/buunyeye.png' },
+       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/mirkocity.png' },
     
       // Add more illustrations as needed
     ]);
