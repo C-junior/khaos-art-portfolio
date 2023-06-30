@@ -296,6 +296,7 @@ nav a:first-of-type {
   
   .header-content a {
     margin-top: 10px;
+    padding: 2px;
   }
   .mainImg {
     display: none;

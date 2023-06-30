@@ -32,10 +32,10 @@ export default {
   setup() {
     const illustrations = ref([
       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/nemesis.jpg' },
-      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/nijinrework.png' },
-      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/Mistyfullrework.png ' },
       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/yelanrework.png' },
+      { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/Mistyfullrework.png ' },      
        { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/trezemod.jpg' },
+       { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/nijinrework.png' },
        { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/buunyeye.png' },
        { image: 'https://raw.githubusercontent.com/C-junior/khaos-art-portfolio/master/src/assets/mirkocity.png' },
     
@@ -191,7 +191,7 @@ main {
 
 @media (max-width: 768px) {
   .illustration-grid {
-    grid-template-columns: repeat(auto-fit, minmax(1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
   }
 
   .overlay-content img {
