@@ -300,11 +300,7 @@ nav a:first-of-type {
   }
   .mainImg {
     display: none;
-    width: 1px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+   
   }
 
   .sideDiv {
@@ -314,9 +310,7 @@ nav a:first-of-type {
     width: 100%;
     height: auto;
   }
-  .box{
-    left: calc(50% - 65px);
-  }
+ 
 
   .card {
     margin: 0 auto;
