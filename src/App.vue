@@ -17,7 +17,7 @@
     </div>
   </header>
 
-  <img class="mainImg" src="../src/assets/nemesis-nobg.png" alt="">
+  <img class="mainImg" src="../src/assets/nobgNemesis.png" alt="">
 
   <div class="sideDiv">
     <h1>
